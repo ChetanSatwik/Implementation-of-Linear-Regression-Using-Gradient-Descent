@@ -8,15 +8,19 @@ To write a program to predict the profit of a city using the linear regression m
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1.Load the dataset from a CSV file and separate the features and target variable, encoding any categorical variables as needed.
+1.Import required libraries and define a Linear Regression function using gradient descent.
 
-2.Scale the features using a standard scaler to normalize the data.
+2.Read the 50_Startups dataset and extract independent variables and the dependent variable.
 
-3.Initialize model parameters (theta) and add an intercept term to the feature set.
+3.Convert the feature values to numeric format and apply standardization using StandardScaler.
 
-4.Train the linear regression model using gradient descent by iterating through a specified number of iterations to minimize the cost function.
+4.Initialize model parameters (θ) and iteratively update them using gradient descent to minimize error.
 
-5.Make predictions on new data by transforming it using the same scaling and encoding applied to the training data.
+5.Train the linear regression model on the scaled dataset to obtain optimal θ values.
+
+6.Scale the new input data and use the trained model to predict the output value.
+
+7.Apply inverse transformation to convert the predicted scaled value back to the original scale.
 
 ## Program:
 ```python
